@@ -7,6 +7,7 @@ import CourseGrid from './component/CourseGrid'
 import FeesTableSimple from './component/FeesTableSimple'
 import ProgramBenefits from './component/ProgramBenefits'
 import CertificateSection from './component/CertificateSection'
+import AdmissionSteps from './component/AdmissionSteps'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <FeesTableSimple />
       <ProgramBenefits />
       <CertificateSection />
+      <AdmissionSteps />
     </div>
   )
 }
