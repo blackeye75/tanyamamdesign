@@ -8,11 +8,16 @@ import FeesTableSimple from './component/FeesTableSimple'
 import ProgramBenefits from './component/ProgramBenefits'
 import CertificateSection from './component/CertificateSection'
 import AdmissionSteps from './component/AdmissionSteps'
+import OpportunitySection from './component/OpportunitySection'
+import HiringPartners from './component/HiringPartners'
+import FAQSection from './component/FAQSection'
+import HighlightSection from './component/HighlightSection'
+import FooterWithMotion from './component/FooterWithMotion'
 
 function App() {
 
   return (
-    <div>
+    <div className="App bg-[#F9FAFB]  ">
       <NavBar />
       <Hero />
       <AboutAmity />
@@ -21,7 +26,12 @@ function App() {
       <ProgramBenefits />
       <CertificateSection />
       <AdmissionSteps />
-    </div>
+      <OpportunitySection />
+      <HiringPartners />
+      <FAQSection />
+      <HighlightSection />
+      <FooterWithMotion />
+    </div >
   )
 }
 
