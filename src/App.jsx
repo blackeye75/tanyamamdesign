@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import NavBar from './component/NavBar'
 import Hero from './component/Hero'
@@ -13,9 +13,27 @@ import HiringPartners from './component/HiringPartners'
 import FAQSection from './component/FAQSection'
 import HighlightSection from './component/HighlightSection'
 import FooterWithMotion from './component/FooterWithMotion'
+import Lenis from "lenis";
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    const lenis = new Lenis();
 
+    lenis.on("scroll", (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
   return (
     <div className="App bg-[#F9FAFB]  ">
       <NavBar />
