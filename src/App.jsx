@@ -14,7 +14,7 @@ import FAQSection from './component/FAQSection'
 import HighlightSection from './component/HighlightSection'
 import FooterWithMotion from './component/FooterWithMotion'
 import Lenis from "lenis";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
